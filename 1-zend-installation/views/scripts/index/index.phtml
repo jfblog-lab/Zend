@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Tutoriel de démarrage de Zend Framework</title>
+		<!-- Méta-tags -->
+		<meta charset="utf-8">
+		<meta name="description" content="Installation de Zend Framework (version 1.12)">
+		<meta name="keywords" content="Zend Framework, Installation, Zend 1.12">
+		<meta name="author" content="Guillaume RICHARD">
+		<meta name="geo.placename" content="Toulouse, Castres">
+
+		<!-- Inclusion CSS -->
+		<link rel="stylesheet" href="<?php echo $this->serverUrl().$this->baseUrl(); ?>/include/css/html.css">
+		<link rel="stylesheet" href="<?php echo $this->serverUrl().$this->baseUrl(); ?>/include/css/style.css" />
+
+		<!-- Inclusion JS -->
+		<script src="<?php echo $this->serverUrl().$this->baseUrl(); ?>/include/js/jquery.js"></script>
+		<script src="<?php echo $this->serverUrl().$this->baseUrl(); ?>/include/js/site.js"></script>
+	</head>
+
+	<body>
+		<div>
+			Si le message ci-dessous marche, C'est que l'installation à marché.<br />
+			<?php echo $this->Message; ?>
+		</div>
+	</body>
+</html>

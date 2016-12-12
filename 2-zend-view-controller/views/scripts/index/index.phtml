@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Tutoriel de démarrage de Zend Framework</title>
+		<!-- Méta-tags -->
+		<meta charset="utf-8">
+		<meta name="description" content="Installation de Zend Framework (version 1.12)">
+		<meta name="keywords" content="Zend Framework, Installation, Zend 1.12">
+		<meta name="author" content="Guillaume RICHARD">
+		<meta name="geo.placename" content="Toulouse, Castres">
+
+		<?php
+		if ("http://localhost" == $this->serverUrl()){
+			include_once("include/local.php");
+		} else if ("http://zend.guillaume-richard.fr" == $this->serverUrl()){
+			include_once("include/ovh.php");
+		}
+		?>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="page-header">
+					<h1>3eme tutoriel Zend Framework</h1>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<article class="span9">
+					<h1><?php echo $this->titreMessage; ?></h1>
+					<p><?php echo $this->testMessage; ?></p>
+				</article>
+				<div class="span3">
+					<h1><?php echo $this->titreSidebar; ?></h1>
+					<p class="well text-error"><?php echo $this->testSidebar; ?></p>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span4 well">Footer 1</div>
+				<div class="span4 well">Footer 2</div>
+				<div class="span4 well">Footer 3</div>
+			</div>
+		</div>
+	</body>
+</html>
